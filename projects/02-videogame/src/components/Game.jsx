@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 export function Game({ board, updateBoard }) {
   return (
     <section className="game">
-      {board.map((x, index) => {
+      {board.map((square, index) => {
         return (
           <Square key={index} index={index} updateBoard={updateBoard}>
-            {x}
+            {square}
           </Square>
         );
       })}
