@@ -11,5 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "git": "^0.1.5"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
