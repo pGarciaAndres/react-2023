@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: system-ui;
+  gap: 1em;
+}
+
+section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+section img {
+  max-width: 300px;
+  height: auto;
+}
