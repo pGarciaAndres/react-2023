@@ -24,3 +24,16 @@ test('has random fact and image', async ({ page }) => {
   await expect(textContent?.length).toBeGreaterThan(0)
   await expect(imageSrc?.startsWith(IMAGE_URL_PREFIX)).toBeTruthy()
 })
+
+test.only('image changes when click button', async ({ page }) => {
+  await page.goto(LOCALHOST_URL)
+
+  const imageSrcBefore = await page.getByRole('img').getAttribute('src')
+
+  await page.getByRole('button').click()
+  await page.waitForTimeout(2000)
+
+  const imageSrcAfter = await page.getByRole('img').getAttribute('src')
+
+  await expect(imageSrcBefore).not.toEqual(imageSrcAfter)
+})
