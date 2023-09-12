@@ -1,0 +1,35 @@
+.products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+  gap: 20px;
+}
+
+.product {
+  text-align: left;
+}
+
+.product img {
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.product button {
+  margin: 0;
+  height: fit-content;
+  padding: 10px;
+}
+
+.product-tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: small;
+}
