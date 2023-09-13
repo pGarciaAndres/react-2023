@@ -25,7 +25,7 @@ test('has random fact and image', async ({ page }) => {
   await expect(imageSrc?.startsWith(IMAGE_URL_PREFIX)).toBeTruthy()
 })
 
-test.only('image changes when click button', async ({ page }) => {
+test('image changes when click button', async ({ page }) => {
   await page.goto(LOCALHOST_URL)
 
   const imageSrcBefore = await page.getByRole('img').getAttribute('src')
