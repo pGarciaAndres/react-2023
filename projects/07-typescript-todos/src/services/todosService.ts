@@ -10,7 +10,6 @@ interface Todo {
 }
 
 export const fetchTodos = async (): Promise<Todo[]> => {
-  debugger;
   const res = await fetch(API_URL);
   if (!res.ok) {
     console.error("Error fetching Todos");
