@@ -10,3 +10,4 @@
 | ECommerce     | Responsive Grid, useContext, useReducer, useId          | [Ver](projects/06-ecommerce/)     |
 | TS Todos      | Typescript, useReducer, Rest Service to JSONBin         | [Ver](projects/07-typescript-todos/)     |
 | Translator    | Typescript, useReducer, Debounce, Hooks                 | [Ver](projects/08-translator/)    |
+| TS CRUD       | Typescript, Redux, Middleware, Fake Fetch, Tremor UI    | [Ver](projects/09-redux-crud/)    |
