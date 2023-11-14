@@ -11,3 +11,4 @@
 | TS Todos      | Typescript, useReducer, Rest Service to JSONBin         | [Ver](projects/07-typescript-todos/)     |
 | Translator    | Typescript, useReducer, Debounce, Hooks                 | [Ver](projects/08-translator/)    |
 | TS CRUD       | Typescript, Redux, Middleware, Fake Fetch, Tremor UI    | [Ver](projects/09-redux-crud/)    |
+| User List     | Typescript, Fetch API                                   | [Ver](projects/10-users-library/) |
