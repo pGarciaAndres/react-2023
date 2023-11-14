@@ -1,0 +1,38 @@
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .column {
+    cursor: pointer;
+
+    svg {
+      position: absolute;
+      margin: 3px 0 0 3px;
+      fill: green;
+    }
+
+    &--inverted {
+      svg {
+        transform: rotate(180deg);
+        margin: -6px 0px 0px -5px;
+      }
+    }
+  }
+
+  .table-head {
+    background: #333;
+  }
+
+  .table-body {
+    &--showColors {
+      tr:nth-child(odd) {
+        background: #333;
+      }
+
+      tr:nth-child(even) {
+        background: #555;
+      }
+    }
+  }
+}
