@@ -8,17 +8,19 @@ import { SortType } from "./types.d";
 function App() {
   const {
     users,
+    loading,
+    error,
     handleSortUsers,
     handleDeleteUser,
     handleResetUsers,
     handleSearchByCountry,
+    handleLoadResults,
   } = useUsers();
 
   const [sorted, setSorted] = useState<SortType>(SortType.None);
   const [inverted, setInverted] = useState<boolean>(true);
 
   const handleSort = (sortBy: SortType) => {
-    debugger;
     const nextInverted = sortBy === sorted ? !inverted : false;
     setInverted(nextInverted);
     setSorted(sortBy);
@@ -38,13 +40,21 @@ function App() {
         />
       </header>
       <main>
-        <Users
-          users={users}
-          sorted={sorted}
-          inverted={inverted}
-          onSort={handleSort}
-          onDelete={handleDeleteUser}
-        />
+        {users.length > 0 && (
+          <Users
+            users={users}
+            sorted={sorted}
+            inverted={inverted}
+            onSort={handleSort}
+            onDelete={handleDeleteUser}
+          />
+        )}
+        {loading && <p>Cargando..</p>}
+        {error && <p>Ha habido un error</p>}
+        {!loading && !error && users.length === 0 && <p>No hay resultados</p>}
+        {users.length > 0 && (
+          <button onClick={handleLoadResults}>Cargar más</button>
+        )}
       </main>
     </div>
   );

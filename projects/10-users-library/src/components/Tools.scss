@@ -4,6 +4,11 @@
   justify-content: center;
   gap: 1em;
 
+  input {
+    font-size: 1em;
+    text-align: center;
+  }
+
   @media (max-width: 750px) {
     flex-direction: column;
     gap: 5px;

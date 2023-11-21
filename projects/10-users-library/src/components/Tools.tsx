@@ -23,7 +23,6 @@ function Tools({ sorted, onSort, onReset, onSearch }: Props) {
   };
 
   const handleSortByCountry = () => {
-    debugger;
     const sortBy = sortedCountry ? SortType.None : SortType.Country;
     onSort(sortBy);
   };

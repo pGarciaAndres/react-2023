@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-size: xx-small;
 }
 
 @media (max-width: 750px) {
@@ -43,6 +44,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
+  @media (max-width: 750px) {
+    place-items: start;
+  }
 }
 
 h1 {

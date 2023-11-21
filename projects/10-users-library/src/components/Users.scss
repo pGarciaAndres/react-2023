@@ -2,20 +2,31 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  margin-bottom: 1em;
+
+  @media (max-width: 750px) {
+    font-size: small;
+  }
 
   .column {
     cursor: pointer;
 
     svg {
       position: absolute;
-      margin: 3px 0 0 3px;
+      margin: 1px 0 0 3px;
       fill: green;
     }
 
     &--inverted {
       svg {
         transform: rotate(180deg);
-        margin: -6px 0px 0px -5px;
+        margin: -6px 0px 0px -3px;
+      }
+    }
+
+    @media (max-width: 750px) {
+      svg {
+        display: none;
       }
     }
   }

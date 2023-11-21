@@ -1,6 +1,6 @@
-import "./Users.scss";
 import { SortType, User } from "../types.d";
 import { ArrowIcon } from "./Icons";
+import "./Users.scss";
 
 type Props = {
   users: User[];
@@ -16,7 +16,6 @@ function Users({ users, sorted, inverted, onSort, onDelete }: Props) {
   };
 
   const handleSort = (sortBy: SortType) => {
-    debugger;
     onSort(sortBy);
   };
 
@@ -49,7 +48,11 @@ function Users({ users, sorted, inverted, onSort, onDelete }: Props) {
             return (
               <tr key={user.id}>
                 <td>
-                  <img src={user.picture} alt={user.name.first} />
+                  <img
+                    style={{ borderRadius: 50 }}
+                    src={user.picture}
+                    alt={user.name.first}
+                  />
                 </td>
                 <td>{user.name.first}</td>
                 <td>{user.name.last}</td>
