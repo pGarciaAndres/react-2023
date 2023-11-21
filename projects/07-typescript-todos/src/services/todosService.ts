@@ -29,8 +29,7 @@ export const updateTodos = async ({
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
-      "X-Master-Key":
-        "$2a$10$ttphFJoN7KQ4SAy7ZROKBeHcr91pbV4rFbxA6tH7h9FpGT7lp3aHe",
+      "X-Master-Key": import.meta.env.VITE_API_BIN_KEY,
     },
     body: JSON.stringify(todos),
   });
