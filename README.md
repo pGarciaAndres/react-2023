@@ -13,3 +13,4 @@
 | TS CRUD       | Typescript, Redux, Middleware, Fake Fetch, Tremor UI    | [Ver](projects/09-redux-crud/)    |
 | User List     | Typescript, Fetch API, Pagination                       | [Ver](projects/10-users-library/) |
 | Zustand Quiz  | Typescript, Zustand                                     | [Ver](projects/11-zustand-quiz/)  |
+| SWR Route News| Typescript, SWR (fetching), Route, Skeleton, Lazy       | [Ver](projects/12-swr-route-news/)|
