@@ -6,7 +6,6 @@ import { Game } from './components/Game'
 
 function App() {
   const questions = useStore((state) => state.questions)
-  console.log(questions)
 
   return (
     <main>
